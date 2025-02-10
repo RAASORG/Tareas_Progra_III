@@ -1,21 +1,39 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "compilar",
-            "type": "shell",
-            "command": "g++",
-            "args": [
-                "-g", "${file}",
-                "-o", "${fileDirname}/${fileBasenameNoExtension}.exe"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": ["$gcc"],
-            "detail": "Compilación con MinGW-w64 en MSYS2"
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar con MinGW",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Compilar con cl.exe",
+      "type": "shell",
+      "command": "cl.exe",
+      "args": [
+        "/EHsc",
+        "${file}",
+        "/Fe:${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$msCompile"],
+      "detail": "Compilación con cl.exe"
+    }  
+  ]
 }
 
+//NADA MAS DESPUES DE AQUI
+  
