@@ -8,7 +8,7 @@ git diff --stat origin/main
 git pull origin main --rebase --strategy-option=theirs
 git config --global merge.conflictstyle diff3
 git add .
-git commit -m "Resolviendo conflictos y actualizando el repositorio"
+git commit -m "..."
 git push origin main
 git status
 git log origin/main --oneline
