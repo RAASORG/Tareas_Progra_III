@@ -47,11 +47,11 @@ int main()
 	string xapellido;
 	string xtipo;
 
-	cout<<"Ingrese el nombre de la persona";
+	cout<<"Ingrese el nombre de la persona: ";
 	cin>>xnombre;
-    cout<<"Ingrese el apellido de la persona";
+    cout<<"Ingrese el apellido de la persona: ";
     cin>>xapellido;
-    cout<<"Ingrese el tipo de persona";
+    cout<<"Ingrese el tipo de persona: ";
     cin>>xtipo;
 
 	Persona persona(xnombre,xapellido,xtipo);
