@@ -221,6 +221,7 @@ public:
                 break;
             case 4:
                 modificarProducto(inventario);
+                exportarInventarioJSON(inventario, "inventario.json");
                 break;
             }
         } while (opcion != 5);
