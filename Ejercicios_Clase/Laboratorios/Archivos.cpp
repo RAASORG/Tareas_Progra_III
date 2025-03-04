@@ -132,10 +132,39 @@ void bajas()
         cout << "No se encontró ningun registro con la clave: " << claveAuxiliar << "\n\n\t\t\t";
     }
 
+    auxiliar.close();
+    lectura.close();
+    remove("alumnos.txt");
+    rename("auxiliar.txt", "alumnos.txt");
 }
 
+void menu()
+{
+    int opc;
+     
+    cout << "\n\n";
+    cout << "Selecione una opcion: " << endl;
+    cout << "1.- Altas" << endl;
+    cout << "2.- Bajas" << endl;
+    cout << "3.- Modificaciones" << endl;
+    cout << "4.- Consultas" << endl;
+    cin>>opc;
+
+    switch (opc)
+    {
+    case 1:
+        altas();
+        break;
+    case 2:
+        bajas();
+        break;
+    default:
+        cout << "Opcion no valida" << endl;
+
+    }
+}
 int main()
 {
-    altas();
+    menu();
     return 0;
 }
