@@ -5,32 +5,32 @@
 
 using namespace std;
 
-void invertirNumero(long numero);
+void invertir(int n);
 
 int main()
 {
-    long numero;
+    int numero;
 
     cout << "Introduzca un numero: ";
     cin >> numero;
 
     cout << "El numero invertido es: ";
-    invertirNumero(numero);
+    invertir(numero);
     cout << endl;
     system("pause");
 
     return 0;
 }
 
-void invertirNumero(long numero)
+void invertir(int n)
 {
-    if (numero < 10)
+    if (n < 10) 
     {
-        cout << numero;
+        cout << n;
     }
     else
     {
-        cout << numero % 10;
-        invertirNumero(numero / 10);
+        cout << n % 10;
+        return invertir(n / 10);
     }
 }
