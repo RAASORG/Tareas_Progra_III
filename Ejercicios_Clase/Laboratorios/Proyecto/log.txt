@@ -1,0 +1,7 @@
+Wed Mar 19 08:48:56 2025
+ - Vehiculo registrado - Placa: bd2345, Modelo: dm250, Tipo: moto
+Wed Mar 19 08:50:54 2025
+ - Vehiculo registrado - Placa: bd1278, Modelo: elantra, Tipo: carro
+Wed Mar 19 08:51:50 2025
+ - Vehiculo eliminado - Placa: bd1278, Modelo: elantra, Tipo: carro, Hora de ingreso: Wed Mar 19 08:50:54 2025
+
