@@ -23,7 +23,7 @@ private:
     void registrarLog(const string &mensaje);
 
 public:
-    Estacionamiento() { inicio = nullptr; }
+    Estacionamiento() { inicio = nullptr; } // Constructor
     ~Estacionamiento();
     void registrarVehiculo();
     void removerVehiculo();
@@ -54,7 +54,7 @@ Estacionamiento::~Estacionamiento()
     }
 }
 
-void Estacionamiento::registrarVehiculo()
+void Estacionamiento::registrarVehiculo() 
 {
     system("clear || cls");
     cout << "\n--- REGISTRO DE VEHICULO ---\n";
